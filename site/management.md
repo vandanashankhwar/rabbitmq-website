@@ -27,7 +27,7 @@ It periodically collects and aggregates data about many aspects of the system. T
 are exposed to both operators in the UI and [monitoring systems](/monitoring.html) for
 long term storage, alerting, visualisation, chart analysis and so on.
 
-The plugin can be [configured](#configuration) to [use HTTPS](#single-listener-https), [OAuth 2](#oauth2-authentication),
+The plugin can be [configured](#configuration) to [use HTTPS](#single-listener-https), [OAuth 2](#oauth2),
 a non-standard port, path prefix, HTTP server options, custom [strict transport security](#hsts) settings,
 [cross-origin resource sharing](#cors), and more.
 
@@ -275,7 +275,7 @@ rabbitmqctl set_user_tags full_access administrator
 </pre>
 
 
-## <a id="oauth2-authentication" class="anchor" href="#oauth2-authentication">Authenticating with OAuth 2</a>
+## <a id="oauth2" class="anchor" href="#oauth2">Authenticating with OAuth 2</a>
 
 RabbitMQ can be configured to use [JWT-encoded OAuth 2.0 access tokens](https://github.com/rabbitmq/rabbitmq-auth-backend-oauth2)
 to authenticate client applications and management UI users. When doing so, the management UI does
